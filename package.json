@@ -1,0 +1,30 @@
+{
+  "name": "patched-site",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "node scripts/serve.mjs",
+    "typecheck": "tsc --noEmit",
+    "test:e2e": "playwright test",
+    "check:launch": "node --no-warnings=MODULE_TYPELESS_PACKAGE_JSON scripts/check-launch.mjs"
+  },
+  "dependencies": {
+    "gsap": "^3.15.0",
+    "lenis": "^1.3.27",
+    "next": "^16.4.3",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.11.0",
+    "@playwright/test": "^1.63.0",
+    "@tailwindcss/postcss": "^4.1.18",
+    "@types/node": "^22.20.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "tailwindcss": "^4.1.18",
+    "typescript": "^5.9.3"
+  }
+}
